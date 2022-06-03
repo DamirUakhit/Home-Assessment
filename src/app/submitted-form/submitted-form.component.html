@@ -1,1 +1,16 @@
-<p>submitted-form works!</p>
+<div style="border: 1px dotted black; padding: 10px" *ngIf="data.data">
+  <button type="button" (click)="goBack()">Back</button><br />
+  <hr />
+  <h2 style="text-align:center">Your Submitted Info</h2>
+  <div>Your Name: {{ data.data.name }}</div>
+  <br />
+  <div>Your Fav Programming: {{ data.data.favProgramming }}</div>
+  <br />
+  <div>Your Fav Color: {{ data.data.favColor }}</div>
+  <br />
+  <div>Your Age: {{ data.data.age }}</div>
+  <br />
+  <hr />
+  <h2 style="text-align:center">Colors</h2>
+  <div>Header Checkbox: {{ data.data.header }}</div>
+</div>
