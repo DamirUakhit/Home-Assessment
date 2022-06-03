@@ -1,4 +1,47 @@
-<div class="container">
-  <div class="menu-items"></div>
-  <div class="form"></div>
-</div>
+<form #user="ngForm" (ngSubmit)="onClickSubmit(user.value)">
+  <div class="container content-container">
+    <div class="menu-items">
+      <div class="">
+        <div *ngFor="let item of menuItems" [class]="'item ' + item.itemClass">
+          <label>
+            <input
+              type="checkbox"
+              (change)="changeBackgroundColors(item)"
+              [value]="item.itemName"
+            /><span>{{ item.itemName }}</span>
+          </label>
+        </div>
+      </div>
+      <!-- end container -->
+    </div>
+    <div class="form">
+      <div class="form-title">
+        <h2>{{ formTitle }}</h2>
+      </div>
+
+      <input type="text" name="name" placeholder="Enter Your Name" ngModel />
+      <input
+        type="text"
+        name="name"
+        placeholder="Your favourite programming language?"
+        ngModel
+      />
+      <input
+        type="text"
+        name="name"
+        placeholder="Enter Your Fav Color"
+        ngModel
+      />
+      <input
+        type="text"
+        onfocus="(this.type='date')"
+        name="name"
+        placeholder="Enter Your Age"
+        ngModel
+      />
+
+      <button type="button" class="resetBtn">Reset</button>
+      <button type="submit" class="submitBtn">Submit</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,92 @@
+.content-container {
+  border: 1px dotted black;
+}
+
+.menu-items {
+  background-color: aliceblue;
+  padding-right: 10px;
+  width: 20%;
+}
+
+.form {
+  background-color: bisque;
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+}
+
+.form-title {
+  background-color: blue;
+  line-height: 30px;
+}
+.form-title h2 {
+  color: white;
+}
+.resetBtn {
+  background-color: firebrick;
+  width: 49%;
+  justify-content: center;
+}
+.submitBtn {
+  background-color: teal;
+  width: 49%;
+  margin-left: 2%;
+  justify-content: center;
+}
+
+/* ===== Styling for menuitem ========*/
+.item {
+  margin: 4px;
+  background-color: #104068;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  float: left;
+}
+
+.item label {
+  float: left;
+  line-height: 3em;
+  width: 8em;
+  height: 3em;
+}
+
+.item label span {
+  text-align: center;
+  padding: 3px 0;
+  display: block;
+}
+
+.item label input {
+  position: absolute;
+  display: none;
+  color: #fff !important;
+}
+/* selects all of the text within the input element and changes the color of the text */
+.item label input + span {
+  color: #fff;
+}
+
+/* This will declare how a selected input will look giving generic properties */
+.item input:checked + span {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+/*
+This following statements selects each item individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
+*/
+
+.orange input:checked + span {
+  background-color: #f75a1b;
+}
+.blue input:checked + span {
+  background-color: #1bb8f7;
+}
+.yellow input:checked + span {
+  background-color: #d9d65d;
+}
+.green input:checked + span {
+  background-color: #82d44e;
+}
