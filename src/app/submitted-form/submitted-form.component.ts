@@ -12,7 +12,7 @@ export class SubmittedFormComponent implements OnInit {
   ngOnInit() {
     console.log(this.data.navigationId);
     if (this.data.data) {
-      console.log(this.data.data.name);
+      console.log(this.data.data);
     }
   }
 
